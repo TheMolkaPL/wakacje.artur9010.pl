@@ -1,5 +1,11 @@
 var date = new Date(2016,5,24,0,0,0,0);
-update();
+
+$(document).ready(
+    function()
+    {
+        update();
+    }
+);
 
 function update(){
     var now = new Date().getTime();
