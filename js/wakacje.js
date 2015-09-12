@@ -30,6 +30,8 @@ function update(){ //aptdejty
     var hours = Math.floor(x % 24); //
     x /= 24; //
     var days = Math.floor(x);
-    document.getElementById('time').innerHTML = "Za jedyne... " + days + " Dni " + hours + " Godzin " + minutes + " minut " + seconds + " Sekund"; // tajmy wyswietlomy
+    var time = " jedyne... " + days + " Dni " + hours + " Godzin " + minutes + " minut " + seconds + " Sekund"; // tajmy wyswietlomy
+    document.getElementById('time').innerHTML = "Za" + time
+    document.title = "Do wakacji" + time;
     setTimeout(update,1000); //lel
 }
